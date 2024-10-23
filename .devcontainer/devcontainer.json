@@ -1,0 +1,14 @@
+{
+  "name": "Python Dev Environment",
+  "image": "mcr.microsoft.com/devcontainers/python:3.9",  
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python"],
+      "settings": {
+        "workbench.editor.enablePreview": false,
+        "workbench.editor.openSideBySideDirection": "right"
+      }
+    }
+  },
+  "postCreateCommand": "code README.md calculator.py --reuse-window"  
+}
